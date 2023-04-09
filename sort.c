@@ -100,6 +100,7 @@ void heapify(int arr[], int N, int index)
 //heapSort is an in-place algorithm, meaning it will not allocate any extra memory
 void heapSort(int arr[], int n)
 {
+	//make sure tree is a max tree
 	for(int index = n / 2 - 1; index >= 0; index--)
 	{
 		heapify(arr, n, index);
